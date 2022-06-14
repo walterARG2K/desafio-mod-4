@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap');
+
+*{  
+    box-sizing: border-box;
+}
+
+body{   
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.welcome-section{
+   
+    width: 100%;
+    height: calc(95vh - 98px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:960px) {
+    .welcome-section{   
+        height: calc(97vh - 98px);
+    }
+}
+
+.background-blur{
+    background-image: url("../images/backgroundMain.jpg");
+    background-position: 55%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 95vh;
+}
+
+@media (min-width:960px) {
+    .background-blur{   
+        height: 100vh;
+    }
+}
+
+
+.welcome-section__title, .welcome-section__subtitle{    
+margin: 0;
+color: #FFFFFF;
+font-family: "Montserrat";
+font-weight: 700;
+font-size: 48px;
+}
+
+.welcome-section__subtitle{    
+    font-size: 28px;
+}
+
+.about-me__container{  
+    padding: 0 31px;
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    background-color: #000;
+}
+
+@media (min-width:960px) {
+    .about-me__container{   
+        background-color: inherit;
+        width: 600px;
+    }
+}
+
+@media(min-width:960px){    
+    .about-me{  
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.about-me__my-picture-desktop{  
+    display: none;
+}
+
+@media(min-width:960px){    
+    .about-me__my-picture-desktop{  
+        display: initial;
+        width: 300px;
+        height: auto;
+    }
+}
+
+.about-me__title, .about-me__description{    
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    max-width: 500px;
+    color: #FFFFFF;
+}
+
+@media (min-width:960px) {
+    .about-me__title, .about-me__description{   
+        color: initial;
+    }
+}
+
+.about-me__description{     
+    text-align: left;
+    font-weight: 400;
+}
+
+.my-services{   
+    text-align: center;
+    padding: 0 40px;
+}
+
+@media (min-width:960px) {
+    .my-services__services{
+        height: 65vh;   
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+.my-services__service-container{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:960px) {
+    .my-services__service-container{    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.my-services__my-service-img{
+    max-height: 138px;   
+    max-width: 138px;
+}
+
+.my-services__title{    
+    font-size: 38px;
+    margin: 40px 0 60px;
+}
+
+.my-services__service-title{ 
+    margin: 0;
+    margin-top: 20px;
+}
+.my-services__service-description{  
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 400px;
+}

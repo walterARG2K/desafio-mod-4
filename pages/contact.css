@@ -1,0 +1,81 @@
+*{  
+    box-sizing: border-box;
+}
+
+.body-contact{  
+    margin: 0;
+    background-color: #141414;
+}
+
+@media (min-width:960px) {
+    .body-contact{  
+        background-image: linear-gradient(to right, #408195,  #00D287);
+    }
+}
+
+.contact{   
+    height: 100%;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 0;
+}
+
+@media (min-width:960px) {
+    .contact{   
+        padding: 150px 0;
+        flex-direction: initial;
+        gap: 100px;
+    }
+}
+
+.contact__contact-form{ 
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-form__container{   
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__title{  
+    text-align: center;  
+    font-family: "Montserrat";
+    font-size: 32px;
+    margin: 100px 0 40px;
+    color: #FFFFFF;
+}
+
+@media (min-width:960px) {
+    .contact__title{    
+        margin: 0;
+    }
+}
+
+.contact-form__label{   
+    color: #FFFFFF;
+}
+
+.contact-form__input, .contact-form__textarea, .contact-form__button{    
+    width: 80vw;
+    height: 45px;
+    max-width: 450px;
+}
+
+.contact-form__textarea{   
+    height: 113px;
+}
+
+.contact-form__button{ 
+    margin-top: 50px; 
+    margin-bottom: 100px;
+    border: none;
+    border-radius: 4px;
+    color: #DBDBDB;
+    font-family: "Poppins";
+    font-weight: 700;
+    background-color: #2C2C2C;
+}
