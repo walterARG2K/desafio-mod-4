@@ -2,7 +2,7 @@ function headerComponent(header) {
     const newElement = document.createElement("div");
 
     newElement.innerHTML = `<header class="header">
-    <img class="header__logo" src="./images/logoPage.png" alt="">
+    <a href="./index.html"><img class="header__logo" src="./images/logoPage.png" alt=""></a>
     <button class="header__menu-burger"><img class="header__img-button-burger" src="./images/burger.svg" alt=""></button>
     <div class="menu-open">
         <button class="menu-open__button"><img class="menu-open__xMenu" src="./images/xMenu.svg" alt=""></button>
