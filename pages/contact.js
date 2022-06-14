@@ -110,7 +110,7 @@ function validateForm() {
 }
 
 (function () {
-    if (document.URL == "http://127.0.0.1:8080/contact.html") {
+    if (document.URL.includes("contact.html")) {
         const footer = document.querySelector(".contact-footer");
         const header = document.querySelector(".contact-header");
         const contact = document.querySelector(".section-contact");
